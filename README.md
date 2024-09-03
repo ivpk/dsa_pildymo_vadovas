@@ -29,3 +29,8 @@ Modelio pavadinimas įrašomas į stulpelį "model". Jei jis turi unikalų rakt�
 
 
 ## ŠDSA ir jo skirtumas nuo DSA
+ŠDSA turi šaltinio duomenis. Šie duomenys yra esminiai, kai spintos pagalba norima pasiekti duomenis, aprašytus šiame DSA. 
+
+## DSA pildymas pagal automatiškai sugeneruotą ŠDSA
+
+## URI pildymas ir žodynai
