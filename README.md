@@ -25,7 +25,7 @@ Kiekvienas duomenų rinkinys gali turėti vieną ar daugiau modelių. Modelis at
 
 Kiekvienas modelis turi pavadinimą, taip pat gali turėti aprašymą bei kitą informaciją. Kokią informaciją gali turėti modelis, rasite [čia](https://ivpk.github.io/dsa/dimensijos.html#model)
 
-
+Modelio pavadinimas įrašomas 
 
 
 ## ŠDSA ir jo skirtumas nuo DSA
