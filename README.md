@@ -66,6 +66,39 @@ Savybių pavadinimai rašomi vienaskaita, išskyrus šiuos atvejus:
 
 ### Modelių skaidymas esant poreikiui
 
+Kartais šaltinyje duomenys gali būti denormalizuoti. Pavyzdžiui, pastato duomenys ir jo savininko duomenys gali būti laikomi toje pačioje lentelėje (ar kitoje duomenų struktūroje). Tokiais atvejais, automatiniu būdu sugeneravus ŠDSA, kai kuriuos modelius reikia išskaidyti į atskirus. 
+
+Pavyzdys:
+
+Pastatas
+  adresas
+  plotas
+  spalva
+  sklypo_plotas
+  sklypo_numeris
+  patalpu_skaicius
+  savininko_vardas
+  savininko_pavarde
+  savininko_a_k
+
+Kaip matom, šiuo atveju čia iš tikro aprašomi trys dalykai: pastatas, sklyoas ir savininkas. Tokiu būdu reikėtų šį modelį išskaidyti į tris modelius:
+
+Pastatas
+  adresas
+  plotas
+  spalva
+  patalpu_skaicius
+
+Sklypas
+  plotas
+  numeris
+
+Savininkas
+  vardas
+  pavarde
+  asmens_kodas
+
+
 
 
 ### Master data ir pasikartojančių modelių aprašymas naudojant `base`
