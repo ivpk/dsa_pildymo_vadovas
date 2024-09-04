@@ -137,6 +137,8 @@ Savininkas
   - pavarde
   - asmens_kodas
 
+Kai naudojamas `base` modelis, reikiamus laukus reikia aprašyti dar kartą ir jį naudojančiame modelyje. Taip pat galima pridėti ir papildomų laukų. 
+
 
 ### URI pildymas ir žodynai
 
