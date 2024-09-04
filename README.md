@@ -139,3 +139,10 @@ Savininkas
 
 
 ### URI pildymas ir žodynai
+
+Duomenų aprašymas DSA formatu yra dalis iniciatyvos unifikuoti visos Europos sąjungos duomenis. Europos Sąjungos duomenys aprašomi naudojant specializuotus žodynus. 
+
+Aprašant duomenis DSA, prie duomenų modelių ir savybių `uri` laukelyje rekomenduotina nurodyti URI, kuri yra nuoroda į šio resurso apibūdinimą tarptautiniuose žodynuose, kurie naudojami aprašant ES duomenis. URI gali būti tiesioginė nuoroda, vedanti į to duomenų tipo aprašymą, pavyzdžiui `http://www.w3.org/2000/01/rdf-schema#Resource` arba nuoroda į žodyną, pridedant to žodyno trumpinį, pavyzdžiui `dct:created`
+ 
+
+
