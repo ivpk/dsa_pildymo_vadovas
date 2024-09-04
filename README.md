@@ -84,19 +84,19 @@ Pastatas
 Kaip matom, šiuo atveju čia iš tikro aprašomi trys dalykai: pastatas, sklyoas ir savininkas. Tokiu būdu reikėtų šį modelį išskaidyti į tris modelius:
 
 Pastatas
-  adresas
-  plotas
-  spalva
-  patalpu_skaicius
+  - adresas
+  - plotas
+  - spalva
+  - patalpu_skaicius
 
 Sklypas
-  plotas
-  numeris
+  - plotas
+  - numeris
 
 Savininkas
-  vardas
-  pavarde
-  asmens_kodas
+  - vardas
+  - pavarde
+  - asmens_kodas
 
 
 
