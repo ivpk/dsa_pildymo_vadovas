@@ -38,9 +38,20 @@ Pavyzdžiui, jei duomenys laikomi SQL duomenų bazėje, tai `source` aprašys du
 
 ## DSA pildymas pagal automatiškai sugeneruotą ŠDSA
 
-Naudodamiesi įrankiu `spinta` galim suformuoti pradinį ŠDSA, kurį 
+Naudodamiesi įrankiu `spinta` galim suformuoti pradinį ŠDSA, kurį vėliau papildysim kita, pradiniame šaltinyje nesama informacija, bei, esant poreikiui, pertvarkysim. 
+
+Turėdami duomenų aprašą XSD formatu, mes galim sugeneruoti pirminį ŠDSA tokia `spinta` komanda:
+
+`spinta copy registras.xsd registras_dsa.xlsx` 
+
+Čia `duomenys.xsd` - mūsų duomenų aprašymas XSD formatu, o `dsa.xlsx` - iš jų sugeneruotas pirminis ŠDSA failas.
+
+Turėdami šį pradinį failą, mes galim toliau rankiniu būdu papildyti reikiama informacija, ir, jei yra poreikis, pertvarkyti jame esančius modelius.
 
 ### Modelių ir savybių pavadinimai
+
+
+
 
 ### Modelių skaidymas esant poreikiui
 
