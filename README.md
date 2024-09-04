@@ -31,6 +31,14 @@ Modelio pavadinimas įrašomas į stulpelį "model". Jei jis turi unikalų rakt�
 
 Savybės yra kiekvieno modelio aprašomosios dalys. Kiekviena savybė aprašo kokį nors objekto požymį. Pavyzdžiui, Gyvenvietė gali turėti pavadinimą, kodą, plotą. Daugiau apie savybes [čia](https://ivpk.github.io/dsa/dimensijos.html#property)
 
+#### `ref` ir `backref` savybės
+
+Savyb4 gali rodyti į kitą modelį. Pavyzdžiui, modelis `Asmuo` gali turėti savybę `adresas`, kuri rodytų į modelį `Adresas`. Tokiu atveju savybės tipas būtų `ref`. Jei asmuo gali turėti kelis adresus, ši savybė būtų masyvas. Tada prie savybės reikėtų pridėti masyvą žymintį simbolį `[]`, savybės pavadinimą pakeisti į daugiskaitą, o savybės tipą nurodyti `backref`. 
+Pavyzdys:
+
+Asmuo
+ - adresai[]   backref  Adresas
+
 ## ŠDSA ir jo skirtumas nuo DSA
 
 ŠDSA turi šaltinio duomenis. Šie duomenys yra svarbūs, kai spintos pagalba norima pasiekti duomenis, aprašytus šiame DSA. 
@@ -63,7 +71,7 @@ Savybių pavadinimai rašomi vienaskaita, išskyrus šiuos atvejus:
 - kai žodis neturi vienaskaitos, pavyzdžiui "pajamos"
 - kai savybė nurodo masyvą. Tokiu atveju savybės prie savybės bus pridedami ir laužtiniai skliaustai, kurie ir pažymi, kad tai masyvas: `[]`. Pavyzdys: "pastatai[]".
 
-### `ref` ir `backref` savybės
+### Jungtiniai (nested) modeliai
 
 
 ### Modelių skaidymas esant poreikiui
@@ -141,12 +149,24 @@ Savininkas
 
 Kai naudojamas `base` modelis, reikiamus laukus reikia aprašyti dar kartą ir jį naudojančiame modelyje. Taip pat galima pridėti ir papildomų laukų. 
 
+[Daugiau apie `base`](https://ivpk.github.io/dsa/dimensijos.html#base)
+
+### Prieigos lygio nurodymas
+
+ŠDSA generuojamas iš duomenų, kurie turi įvairaus prieigos lygio duomenų. Kai kurie jų gali būti vieši, kiti gali būti dalinamiesi tik su tam tikrais gavėjais, treti - visiškai privatūs, naudojami viduje. Šiems prieigos lygiams nurodyti yra skirtas stulpelis "access". Prieigos lygiai gali būti šie:
+
+- open - visiems laisvai prieinami
+- public (nuo DSA 0.2 versijos - shared) - prieinami tik tiems, kas turi gavę prieigos teisę
+- private - šiais duomenimis nesidalijama su nieko, įprastai tai - techniniai sistemos duomenys. 
 
 ### URI pildymas ir žodynai
 
 Duomenų aprašymas DSA formatu yra dalis iniciatyvos unifikuoti visos Europos sąjungos duomenis. Europos Sąjungos duomenys aprašomi naudojant specializuotus žodynus. 
 
-Aprašant duomenis DSA, prie duomenų modelių ir savybių `uri` laukelyje rekomenduotina nurodyti URI, kuri yra nuoroda į šio resurso apibūdinimą tarptautiniuose žodynuose, kurie naudojami aprašant ES duomenis. URI gali būti tiesioginė nuoroda, vedanti į to duomenų tipo aprašymą, pavyzdžiui `http://www.w3.org/2000/01/rdf-schema#Resource` arba nuoroda į žodyną, pridedant to žodyno trumpinį, pavyzdžiui `dct:created`
+Aprašant duomenis DSA, prie duomenų modelių ir savybių `uri` laukelyje rekomenduotina nurodyti URI, kuri yra nuoroda į šio resurso apibūdinimą tarptautiniuose žodynuose, kurie naudojami aprašant ES duomenis. URI gali būti tiesioginė nuoroda, vedanti į to duomenų tipo aprašymą, pavyzdžiui `http://www.w3.org/2000/01/rdf-schema#Resource` arba nuoroda į žodyną, pridedant to žodyno trumpinį, pavyzdžiui `dct:created`.
+
+
  
+### Duomenų brandos lygis
 
-
+Duomenų brandos lygis nurodo 
