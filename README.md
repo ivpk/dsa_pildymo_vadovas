@@ -33,7 +33,7 @@ Savybės yra kiekvieno modelio aprašomosios dalys. Kiekviena savybė aprašo ko
 
 #### `ref` ir `backref` savybės
 
-Savyb4 gali rodyti į kitą modelį. Pavyzdžiui, modelis `Asmuo` gali turėti savybę `adresas`, kuri rodytų į modelį `Adresas`. Tokiu atveju savybės tipas būtų `ref`. Jei asmuo gali turėti kelis adresus, ši savybė būtų masyvas. Tada prie savybės reikėtų pridėti masyvą žymintį simbolį `[]`, savybės pavadinimą pakeisti į daugiskaitą, o savybės tipą nurodyti `backref`. 
+Savybė gali rodyti į kitą modelį. Pavyzdžiui, modelis `Asmuo` gali turėti savybę `adresas`, kuri rodytų į modelį `Adresas`. Tokiu atveju savybės tipas būtų `ref`. Jei asmuo gali turėti kelis adresus, ši savybė būtų masyvas. Tada prie savybės reikėtų pridėti masyvą žymintį simbolį `[]`, savybės pavadinimą pakeisti į daugiskaitą, o savybės tipą nurodyti `backref`. 
 Pavyzdys:
 
 ```
