@@ -17,7 +17,7 @@ Duomenų rinkinys turi pavadinimą, tipą bei kitą informaciją. [Daugiau apie 
 
 ### Resource
 
-Duomenų rinkinys gali tur4ti vien1 ar kelis resursus. Tai - fizinės duomenų saugojimo vietos, pavyzdžiui, duomenų bazės, aprašymas.
+Duomenų rinkinys gali turėti vieną ar kelis resursus. Tai - fizinės duomenų saugojimo vietos, pavyzdžiui, duomenų bazės, aprašymas.
 
 ### Modeliai
 
