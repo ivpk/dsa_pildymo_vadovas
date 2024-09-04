@@ -75,6 +75,7 @@ Savybių pavadinimai rašomi vienaskaita, išskyrus šiuos atvejus:
 
 ### Jungtiniai (nested) modeliai
 
+(bus papildyta)
 
 ### Modelių skaidymas esant poreikiui
 
