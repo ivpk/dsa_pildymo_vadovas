@@ -50,10 +50,23 @@ Turėdami šį pradinį failą, mes galim toliau rankiniu būdu papildyti reikia
 
 ### Modelių ir savybių pavadinimai
 
+Iš šaltinio sugeneruoti modelių ir savybių pavadinimai gali būti neinformatyvūs, tai gali būti įvairūs trumpiniai ar panašiai. Pavyzdžiui, gali būti "Gyvenv",  "tr_pav". Tokius pavadinimus reikia pakeisti į pilnus žodžius, aiškiai atitinkančius tai, kas tai iš tikro yra. Pavyzdžiui, "Gyvenviete", "trumpas_pavadinimas"
 
+Modelių pavadinimai turi prasidėti didžiąja raide. Jei modelio pavadinimas susideda iš kelių žodžių, visi žodžiai turi prasidėti didžiosiomis raidėmis ir tarp jų neturi būti tarpų. Pavyzdžiui MiestoGatve.
+
+Modelio pavadinimas turi būti vienaskaita. Daugiskaita gali būti naudojama tik išskirtiniais atvejais, kai žodis neturi vienaskaitos, pavyzdžiui "Pajamos".
+
+Savybių pavadinimai turi būti mažosiomis raidėmis. Jei savybė susideda iš kelių žodžių, jie atkiriami pabraukimu, pavyzdžiui "miesto_gatve".
+
+Savybių pavadinimai rašomi vienaskaita, išskyrus šiuos atvejus:
+
+- kai žodis neturi vienaskaitos, pavyzdžiui "pajamos"
+- kai savybė nurodo masyvą. Tokiu atveju savybės prie savybės bus pridedami ir laužtiniai skliaustai, kurie ir pažymi, kad tai masyvas: `[]`. Pavyzdys: "pastatai[]".
 
 
 ### Modelių skaidymas esant poreikiui
+
+
 
 ### Master data ir pasikartojančių modelių aprašymas naudojant `base`
 
