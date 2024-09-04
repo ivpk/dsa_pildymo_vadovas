@@ -58,13 +58,17 @@ Turėdami duomenų aprašą XSD formatu, mes galim sugeneruoti pirminį ŠDSA to
 
 Turėdami šį pradinį failą, mes galim toliau rankiniu būdu papildyti reikiama informacija, ir, jei yra poreikis, pertvarkyti jame esančius modelius.
 
-### Modelių ir savybių pavadinimai
+### Modelių ir savybių pavadinimai bei aprašymai
 
 Iš šaltinio sugeneruoti modelių ir savybių pavadinimai gali būti neinformatyvūs, tai gali būti įvairūs trumpiniai ar panašiai. Pavyzdžiui, gali būti "Gyvenv",  "tr_pav". Tokius pavadinimus reikia pakeisti į pilnus žodžius, aiškiai atitinkančius tai, kas tai iš tikro yra. Pavyzdžiui, "Gyvenviete", "trumpas_pavadinimas"
+
+#### Modelių pavadinimai
 
 Modelių pavadinimai turi prasidėti didžiąja raide. Jei modelio pavadinimas susideda iš kelių žodžių, visi žodžiai turi prasidėti didžiosiomis raidėmis ir tarp jų neturi būti tarpų. Pavyzdžiui MiestoGatve.
 
 Modelio pavadinimas turi būti vienaskaita. Daugiskaita gali būti naudojama tik išskirtiniais atvejais, kai žodis neturi vienaskaitos, pavyzdžiui "Pajamos".
+
+#### Savybių pavadinimai
 
 Savybių pavadinimai turi būti mažosiomis raidėmis. Jei savybė susideda iš kelių žodžių, jie atkiriami pabraukimu, pavyzdžiui "miesto_gatve".
 
@@ -72,6 +76,10 @@ Savybių pavadinimai rašomi vienaskaita, išskyrus šiuos atvejus:
 
 - kai žodis neturi vienaskaitos, pavyzdžiui "pajamos"
 - kai savybė nurodo masyvą. Tokiu atveju savybės prie savybės bus pridedami ir laužtiniai skliaustai, kurie ir pažymi, kad tai masyvas: `[]`. Pavyzdys: "pastatai[]".
+
+#### Modelių ir savybių aprašymai
+
+Modelių ir savybių aprašymai nurodomi stulpelyje `description`. Jei ši esybė aprašoma naujai, jai suteikiamas naujas aprašymas, bet jei ji aprašoma naudojant [išorinius žodynus](https://ivpk.github.io/dsa/zodynai.html) tai į laukus `title` ir `description` įrašom reikšmes iš atitinkamo žodyno. Daugiau apie žodynus - žemiau.
 
 ### Jungtiniai (nested) modeliai
 
@@ -160,7 +168,9 @@ Kai naudojamas `base` modelis, reikiamus laukus reikia aprašyti dar kartą ir j
 
 - open - visiems laisvai prieinami
 - public (nuo DSA 0.2 versijos - shared) - prieinami tik tiems, kas turi gavę prieigos teisę
-- private - šiais duomenimis nesidalijama su nieko, įprastai tai - techniniai sistemos duomenys. 
+- private - šiais duomenimis nesidalijama su nieko, įprastai tai - techniniai sistemos duomenys.
+
+[Daugiau apie prieigos lygius](https://ivpk.github.io/dsa/prieiga.html)
 
 ### URI pildymas ir žodynai
 
