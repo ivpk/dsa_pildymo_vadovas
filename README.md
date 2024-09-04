@@ -71,15 +71,15 @@ Kartais šaltinyje duomenys gali būti denormalizuoti. Pavyzdžiui, pastato duom
 Pavyzdys:
 
 Pastatas
-  adresas
-  plotas
-  spalva
-  sklypo_plotas
-  sklypo_numeris
-  patalpu_skaicius
-  savininko_vardas
-  savininko_pavarde
-  savininko_a_k
+  - adresas
+  - plotas
+  - spalva
+  - sklypo_plotas
+  - sklypo_numeris
+  - patalpu_skaicius
+  - savininko_vardas
+  - savininko_pavarde
+  - savininko_a_k
 
 Kaip matom, šiuo atveju čia iš tikro aprašomi trys dalykai: pastatas, sklyoas ir savininkas. Tokiu būdu reikėtų šį modelį išskaidyti į tris modelius:
 
