@@ -88,6 +88,13 @@ Pastatas
   - plotas
   - spalva
   - patalpu_skaicius
+  - savininkas
+  - savininkas.vardas
+  - savininkas.pavarde
+  - savininkas.asmens_kodas
+  - sklypas
+  - sklypas.plotas
+  - sklypas.numeris
 
 Sklypas
   - plotas
@@ -99,8 +106,36 @@ Savininkas
   - asmens_kodas
 
 
-
-
 ### Master data ir pasikartojančių modelių aprašymas naudojant `base`
+
+Vienas objektas (esybė) įvairiai būna aprašomas skirtingose sistemose. Bet siekiant unifikuoti Valstybės duomenų aprašymus, kiekvienas objektas turi turėti vieną pagrindinį aprašymą, kuris būtų naudojamas kitur. Pavyzdžiui, Asmuo, JuridinisAsmuo, Pastatas, TeisėsAktas, Igaliojimas ir pan.
+
+Šiuo atveju, pavyzdžiui, Asmuo yra aprašomas Gyventojų registre, ir tai yra pirminis jo aprašymas. Bet, pavyzdžiui, Neklinojamojo turto registre gali būti aprašomas nekilnojamojo turto savininkas, kuris taip pat bus asmuo
+
+Šiuo atveju prie Nekilnojamojo turto registre esančio modelio Savininkas turėtų būti nurodoma `base` Asmuo`. 
+
+Pastatas
+  - adresas
+  - plotas
+  - spalva
+  - patalpu_skaicius
+  - savininkas
+  - savininkas.vardas
+  - savininkas.pavarde
+  - savininkas.asmens_kodas
+  - sklypas
+  - sklypas.plotas
+  - sklypas.numeris
+
+Sklypas
+  - plotas
+  - numeris
+
+\gyventoju_registras\Asmuo
+Savininkas
+  - vardas
+  - pavarde
+  - asmens_kodas
+
 
 ### URI pildymas ir žodynai
