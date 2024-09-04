@@ -27,9 +27,13 @@ Kiekvienas modelis turi pavadinimą, taip pat gali turėti aprašymą bei kitą 
 
 Modelio pavadinimas įrašomas į stulpelį "model". Jei jis turi unikalų raktą, šio unikalaus rakto pavadinimas rašomas į stulpelį "ref". 
 
+### Savybės (properties)
+
+
 
 ## ŠDSA ir jo skirtumas nuo DSA
-ŠDSA turi šaltinio duomenis. Šie duomenys yra esminiai, kai spintos pagalba norima pasiekti duomenis, aprašytus šiame DSA. 
+
+ŠDSA turi šaltinio duomenis. Šie duomenys yra svarbūs, kai spintos pagalba norima pasiekti duomenis, aprašytus šiame DSA. 
 
 ## DSA pildymas pagal automatiškai sugeneruotą ŠDSA
 
