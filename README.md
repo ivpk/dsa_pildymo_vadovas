@@ -63,6 +63,8 @@ Savybių pavadinimai rašomi vienaskaita, išskyrus šiuos atvejus:
 - kai žodis neturi vienaskaitos, pavyzdžiui "pajamos"
 - kai savybė nurodo masyvą. Tokiu atveju savybės prie savybės bus pridedami ir laužtiniai skliaustai, kurie ir pažymi, kad tai masyvas: `[]`. Pavyzdys: "pastatai[]".
 
+### `ref` ir `backref` savybės
+
 
 ### Modelių skaidymas esant poreikiui
 
