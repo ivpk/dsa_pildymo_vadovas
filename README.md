@@ -29,12 +29,21 @@ Modelio pavadinimas įrašomas į stulpelį "model". Jei jis turi unikalų rakt�
 
 ### Savybės (properties)
 
-
+Savybės yra kiekvieno modelio aprašomosios dalys. Kiekviena savybė aprašo kokį nors objekto požymį. Pavyzdžiui, Gyvenvietė gali turėti pavadinimą, kodą, plotą. Daugiau apie savybes [čia](https://ivpk.github.io/dsa/dimensijos.html#property)
 
 ## ŠDSA ir jo skirtumas nuo DSA
 
 ŠDSA turi šaltinio duomenis. Šie duomenys yra svarbūs, kai spintos pagalba norima pasiekti duomenis, aprašytus šiame DSA. 
+Pavyzdžiui, jei duomenys laikomi SQL duomenų bazėje, tai `source` aprašys duomenų bazės lenteles (modeliams) bei laukus (savybėmns). Jei tai XML, source bus XPATH, kuriuo gali būti pasiekiamas elementas, atitinkantis modelį ar savybę. 
 
 ## DSA pildymas pagal automatiškai sugeneruotą ŠDSA
 
-## URI pildymas ir žodynai
+Naudodamiesi įrankiu `spinta` galim suformuoti pradinį ŠDSA, kurį 
+
+### Modelių ir savybių pavadinimai
+
+### Modelių skaidymas esant poreikiui
+
+### Master data ir pasikartojančių modelių aprašymas naudojant `base`
+
+### URI pildymas ir žodynai
