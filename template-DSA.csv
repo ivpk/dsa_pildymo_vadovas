@@ -1,0 +1,7 @@
+id,dataset,resource,base,model,property,type,ref,source,prepare,level,access,uri,title,description
+,datasets/gov/(institucija)/(infsis),,,,,ns,,,,,,,Informacinės sistemos pavadinimas,
+,datasets/gov/(institucija)/(infsis)/(duomrink),,,,,,,,,,,,Duomenų rinkinio pavadinimas,
+,,,,Esybe,,,id,,,4,,,Esybės duomenų modelio pavadinimas,Esybės duomenų modelio aprašymas
+,,,,,id,integer,,,,4,open,,id pavadinimas,
+,,,,,pavadinimas,string,,,,4,open,,pavadinimas pavadinimas,pavadinimas aprašymas
+,,,,,irasymo_data,date,D,,,4,open,,įrašymo datos pavadinimas, įrašymo datos aprašymas
